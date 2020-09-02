@@ -1,0 +1,55 @@
+.cover-banner {
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @extend %gradient-bg;
+        width: 100%;
+        height: 50%;
+        content: "";
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        opacity: 0.6;
+    }
+
+    @include breakpoint(xmedium) {
+        img {
+            height: 300px;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: right;
+            object-position: right;
+        }
+    }
+}
+
+.inner-banner {
+    .heading-box {
+        padding: 20px 40px 0;
+
+
+        h2 {
+            text-transform: capitalize;
+        }
+
+        @include breakpoint(medium) {
+            padding: 20px 15px 0;
+        }
+
+        @include breakpoint(xsml) {
+            h2 {
+                font-size: 26px;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}

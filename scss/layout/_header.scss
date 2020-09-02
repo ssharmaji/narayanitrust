@@ -1,0 +1,22 @@
+header{
+    border-top: solid 4px #ef6637;
+    padding: 15px 0;;
+    .logo-box{
+        width: 100px;
+    }
+    ul{
+        margin-bottom: 0;;
+    }
+    .navBar{
+        li{
+            list-style: none;
+            display: inline-block;;
+            padding: 0px 15px;
+            a{  
+                text-transform: capitalize;
+                color: $color-black;
+                font-weight: 500;;
+            }
+        }
+    }
+}

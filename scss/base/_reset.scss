@@ -1,0 +1,229 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    // font-size: $font-size-body;
+    font-size: 16px;
+    color: $color-text;
+    background-color: $color-white;
+    font-family: $primary-font-offwhite;
+    -webkit-text-size-adjust: none;
+    position: relative;
+    display: none;
+
+    &.active-popup {
+        overflow: hidden;
+
+        &:after {
+            opacity: 1;
+            z-index: 9;
+            visibility: visible;
+        }
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: rgba($color-black, 0.7);
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all 0.5s);
+    }
+}
+
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.color-white {
+    * {
+        color: $color-white;
+    }
+}
+
+.bg-control {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slick-slide {
+    outline: none;
+}
+
+.section {
+    padding: 70px 0;
+
+    &-lg {
+        padding: 100px 0;
+    }
+
+    @include breakpoint(large) {
+        padding: 50px 0;
+
+        &-lg {
+            padding: 70px 0;
+        }
+    }
+}
+.btn{
+    background-color: #ef6637;
+    color: #fff;
+    padding: 7px 15px;
+    &:hover{
+        color: #fff;
+    }
+}
+.container {
+    max-width: 1100px;
+    padding: 0px 15px;
+
+    &-sm {
+        width: 930px;
+        max-width: 100%;
+        padding: 0px 15px;
+        margin: 0 auto;
+    }
+
+    @include breakpoint(xmedium) {
+        padding: 0px 15px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+    width: 50px;
+    height: 19px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: none;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    @include transition(all 0.3s);
+    background-position-x: 0;
+
+    &:hover {
+        background-position-x: 100%;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.slick-next {
+        left: 100%;
+        right: auto;
+        background-image: url(../../app/images/arrow-black.png);
+
+    }
+
+    &.slick-prev {
+        right: 100%;
+        left: auto;
+        transform: translateY(-50%) rotate(180deg);
+        background-image: url(../../app/images/arrow-black.png);
+    }
+}
+
+
+.border-pattan {
+    border: none !important;
+
+    figure {
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            background-repeat: repeat;
+            width: 5px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-image: url(../../app/images/border.png);
+        }
+    }
+
+    &.border-right {
+        figure {
+            &:after {
+                right: 0;
+                left: auto;
+                background-image: url(../../app/images/border-right.png);
+
+            }
+        }
+    }
+
+    &.border-bottom {
+        figure {
+            &:after {
+                top: auto;
+                background-image: url(../../app/images/border-bottom.png);
+                bottom: 0;
+                height: 5px;
+                width: 100%;
+            }
+        }
+    }
+
+    &.border-top {
+        figure {
+            &:after {
+                height: 5px;
+                width: 100%;
+                background-image: url(../../app/images/border-top.png);
+            }
+        }
+    }
+}
+
+.page-heading {
+    text-align: center;
+    margin-top: -30px;
+    padding-left: 400px;
+
+    h3 {
+        text-transform: capitalize;
+        margin-bottom: 80px;
+    }
+
+    @include breakpoint(medium) {
+        h3 {
+            padding: 0px 15px;
+            text-align: left !important;
+        }
+    }
+
+}
+
+.d-flex {
+    flex-wrap: wrap;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+}

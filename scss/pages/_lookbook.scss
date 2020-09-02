@@ -1,0 +1,108 @@
+.lookbook-listing {
+    .listing-section {
+        li {
+            a {
+                height: 100%;
+
+                figure {
+                    height: 100%;
+                    padding: 0;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.lookbook-singleBanner {
+    @include breakpoint(xsml) {
+        img {
+            -o-object-position: right;
+            object-position: right;
+        }
+    }
+}
+
+.lookbook-banner {
+    background-position: top;
+    @include breakpoint(xsml) {
+        background-position: right;
+    }
+
+    .banner-content {
+
+        h2,
+        p {
+            color: $color-black;
+        }
+
+        h2 {
+            @include breakpoint(medium) {
+                font-size: 30px;
+            }
+        }
+
+    }
+
+}
+
+.lookbook-section {
+    padding: 50px 40px;
+
+    @include breakpoint(medium) {
+        padding: 50px 15px;
+    }
+
+    .d-flex {
+        margin-bottom: 100px;
+
+        @include breakpoint(xmedium) {
+            margin-bottom: 50px;
+        }
+    }
+
+    .colmn-text {
+        width: 30%;
+
+        @include breakpoint(large) {
+            width: 45%;
+        }
+
+        @include breakpoint(xmedium) {
+            width: 100%;
+            -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+            order: 3;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            margin: 20px 0 40px;
+
+            @include breakpoint(xmedium) {
+                margin: 15px 0 20px;
+            }
+        }
+
+        a {
+            display: block;
+            text-align: right;
+        }
+    }
+
+    .colmn-img {
+
+        width: 50%;
+
+        @include breakpoint(xmedium) {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.btn-arrow {
+    text-decoration: none;
+    color: $color-black;
+    background-image: url(../../app/images/arrow-black.png);
+    padding-right: 100px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 90%;
+    @include transition(all 0.3s);
+    display: inline-block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+        background-position-x: 100%;
+        text-decoration: none;
+        color: $color-black;
+    }
+}
+
+.btn-close {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    @include transition(all 0.5s);
+
+    &:hover {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    &:after,
+    &:before {
+        width: 15px;
+        height: 2px;
+        content: "";
+        top: 50%;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) rotate(45deg);
+        transform: translate(-50%, -50%) rotate(45deg);
+        background-color: $color-text;
+    }
+
+    &:after {
+        -webkit-transform: translate(-50%, -50%) rotate(135deg);
+        transform: translate(-50%, -50%) rotate(135deg);
+    }
+}

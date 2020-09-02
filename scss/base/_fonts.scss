@@ -1,0 +1,47 @@
+// $filePath: "../../";
+// @font-face {
+//     font-family: "Apercu-Medium";
+//     src: url($filePath+"app/fonts/Apercu-Medium.eot");
+//     /* IE9 Compat Modes */
+//     src: url($filePath+"app/fonts/Apercu-Medium.woff2") format("woff2"), /* Super Modern Browsers */
+//     url($filePath+"app/fonts/Apercu-Medium.woff") format("woff"), /* Pretty Modern Browsers */
+//     url($filePath+"app/fonts/Apercu-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+//     url($filePath+"app/fonts/Apercu-Medium.svg") format("svg");
+//     /* Legacy iOS */
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+$fonts:'../../app/fonts/';
+
+@font-face {
+    font-family: 'Basis Grotesque Pro Light';
+    src: url('#{$fonts}BasisGrotesquePro-Light.woff2') format('woff2'),
+    url('#{$fonts}BasisGrotesquePro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basis Grotesque Pro Bold';
+    src: url('#{$fonts}BasisGrotesquePro-Bold.woff2') format('woff2'),
+    url('#{$fonts}BasisGrotesquePro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basis Grotesque Pro';
+    src: url('#{$fonts}BasisGrotesquePro-Regular.woff2') format('woff2'),
+    url('#{$fonts}BasisGrotesquePro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basis Grotesque Pro Off White';
+    src: url('#{$fonts}BasisGrotesquePro-OffWhite.woff2') format('woff2'),
+    url('#{$fonts}BasisGrotesquePro-OffWhite.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
