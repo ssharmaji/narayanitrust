@@ -227,3 +227,33 @@ img {
 .text-capitalize {
     text-transform: capitalize !important;
 }
+
+
+.goog-logo-link{
+    display: none !important;
+}
+
+#google_translate_element_id{
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // display: none;
+    *{
+        font-size: 0;
+    }
+    select{
+        font-size: 14px;
+        margin: 0;
+        *{
+            font-size: 14px;
+        }
+    }
+}
+// .skiptranslate.goog-te-gadget{
+//     *{
+//         font-size: 0;
+//     }
+//     img{
+//         display: none;
+//     }
+// }

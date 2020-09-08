@@ -11,7 +11,8 @@ header{
         li{
             list-style: none;
             display: inline-block;;
-            padding: 0px 15px;
+            padding: 0px 10px;
+            vertical-align: middle;
             a{  
                 text-transform: capitalize;
                 color: $color-black;

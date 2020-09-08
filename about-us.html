@@ -3,8 +3,8 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" /> -->
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="shortcut icon" href="app/images/fevicon.ico" type="image/x-icon">
 		<!-- fonts links -->
@@ -16,7 +16,7 @@
 			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 		<!-- Custom style sheet -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-		<link rel="stylesheet" href="app/css/style.min.css">
+		<link rel="stylesheet" href="app/css/style.css">
 		<title>Narayani Trust || About Us</title>
 	</head>
 
@@ -30,11 +30,12 @@
 					<div class="navBar">
 						<ul>
 							<li><a href="about-us.html">About us</a></li>
-							<li><a href="#">narayani Sena</a></li>
+							<li><a href="narayani-sena.html">narayani Sena</a></li>
 							<li><a href="donations.html">Donations</a></li>
 							<li><a href="daily-pooja.html">Pooja Activity</a></li>
 							<li><a href="gallery.html">Photo Gallery</a></li>
-							<li><a href="#">Contact Us</a></li>
+							<!-- <li><a href="#">Contact Us</a></li> -->
+							<li><div id="google_translate_element_id"></div> </li>
 						</ul>
 					</div>
 				</div>
@@ -109,10 +110,10 @@
 						<h4>Important Links</h4>
 						<ul>
 							<li><a href="about-us.html">About us</a></li>
-							<li><a href="#">narayani Sena</a></li>
+							<li><a href="narayani-sena.html">narayani Sena</a></li>
 							<li><a href="donations.html">Donations</a></li>
 							<li><a href="daily-pooja.html">Pooja Activity</a></li>
-							<li><a href="#">Contact Us</a></li>
+							<!-- <li><a href="#">Contact Us</a></li> -->
 						</ul>
 					</div>
 					<div class="colmn-box">
@@ -139,6 +140,24 @@
 		<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="js/main.js"></script>
+		<script type="text/javascript">  
+			function googleTranslateElementInit() {  
+				new google.translate.TranslateElement( 
+					{pageLanguage: 'en'},  
+					'google_translate_element_id' 
+				);  
+			}  
+		</script>  
+		<script type="text/javascript"> 
+			(function(){var gtConstEvalStartTime = new Date();/*
+
+			Copyright The Closure Library Authors.
+			SPDX-License-Identifier: Apache-2.0
+			*/
+			function d(b){var a=document.getElementsByTagName("head")[0];a||(a=document.body.parentNode.appendChild(document.createElement("head")));a.appendChild(b)}function _loadJs(b){var a=document.createElement("script");a.type="text/javascript";a.charset="UTF-8";a.src=b;d(a)}function _loadCss(b){var a=document.createElement("link");a.type="text/css";a.rel="stylesheet";a.charset="UTF-8";a.href=b;d(a)}function _isNS(b){b=b.split(".");for(var a=window,c=0;c<b.length;++c)if(!(a=a[b[c]]))return!1;return!0}
+			function _setupNS(b){b=b.split(".");for(var a=window,c=0;c<b.length;++c)a.hasOwnProperty?a.hasOwnProperty(b[c])?a=a[b[c]]:a=a[b[c]]={}:a=a[b[c]]||(a[b[c]]={});return a}window.addEventListener&&"undefined"==typeof document.readyState&&window.addEventListener("DOMContentLoaded",function(){document.readyState="complete"},!1);
+			if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google.translate._const');c._cest = gtConstEvalStartTime;gtConstEvalStartTime = undefined;c._cl='en';c._cuc='googleTranslateElementInit';c._cac='';c._cam='';c._ctkk='444317.3872704516';var h='translate.googleapis.com';var s=(true?'https':window.location.protocol=='https:'?'https':'http')+'://';var b=s+h;c._pah=h;c._pas=s;c._pbi=b+'/translate_static/img/te_bk.gif';c._pci=b+'/translate_static/img/te_ctrl3.gif';c._pli=b+'/translate_static/img/loading.gif';c._plla=h+'/translate_a/l';c._pmi=b+'/translate_static/img/mini_google.png';c._ps=b+'/translate_static/css/translateelement.css';c._puh='translate.google.com';_loadCss(c._ps);_loadJs(b+'/translate_static/js/element/main.js');})();})();
+		</script>
 	</body>
 
 </html>
